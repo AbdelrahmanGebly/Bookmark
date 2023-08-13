@@ -1,0 +1,30 @@
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    span p{
+        font-size: 18px;
+    }
+    .error{
+        width: 60%;
+    }
+}
+@media screen and (max-width:767px){
+    h2{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .error p:first-of-type{
+        font-size: 10px;
+    }
+    .error{
+        width: 60%;
+    }
+}
+@media screen and (max-width:567px){
+    button i{
+        display: none !important;
+    }
+}

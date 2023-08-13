@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="images/bookmark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/media.css">
+</head>
+
+<body>
+  <h1 class="text-center mt-5 mb-5 position-relative mx-auto">Bookmarker</h1>
+  <div class="container my-4 py-4 dashed">
+    <h2 class="text-center mb-5">
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+    <div class="form">
+      <label for="siteName" class="mb-2">
+        <i class="fa-solid fa-book-bookmark pe-2"></i>
+        Site Name
+      </label>
+      <input type="text" name="siteName" id="siteName" class="form-control mb-3" placeholder="Bookmark Name">
+      <label for="siteUrl" class="mb-2">
+        <i class="fa-solid fa-link pe-2"></i>
+        Site URL
+      </label>
+      <input type="text" name="siteUrl" id="siteUrl" class="form-control mb-3" placeholder="Website URL">
+      <button class="btn btn-submit fw-semibold d-block mx-auto mt-4" id="btn">Add Bookmark</button>
+    </div>
+  </div>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <th class="text-center">Index</th>
+        <th class="text-center">Website Name</th>
+        <th class="text-center">visit</th>
+        <th class="text-center">Delete</th>
+      </thead>
+      <tbody id="container">
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="errorContainer d-none justify-content-center align-items-center w-100 h-100">
+    <div class="error p-3 rounded-3">
+      <div class="top d-flex justify-content-between mb-4">
+        <span>
+          <span class="bg-danger rounded-circle"></span>
+          <span class="bg-success rounded-circle"></span>
+          <span class="bg-warning rounded-circle"></span>
+        </span>
+        <i class="fa-solid fa-xmark close fs-3"></i>
+      </div>
+      <p class="fw-semibold fs-4">
+          Site Name or Url is not valid, Please follow the rules below :
+      </p>
+      <span><i class="fa-regular fa-circle-right p-2 text-danger"></i></span>
+      <span>
+        <p>Site name must contain at least 3 characters</p>
+      </span><br>
+      <span><i class="fa-regular fa-circle-right p-2 text-danger"></i></span>
+      <span>
+        <p>Site name must contain at least 3 characters</p>
+      </span>
+    </div>
+  </div>
+  <button class="btn btn-dark text-white right-0" id="deleteAll">Delete All</button>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
