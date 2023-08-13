@@ -17,7 +17,6 @@ if(localStorage.getItem('books')){
 
 
 
-hideDeleteAllButton();
 btn.onclick = function(){
     if(siteName.classList.contains('valid')&&siteUrl.classList.contains('valid') && siteName.value !=''&&siteUrl.value !=''){
         addBookMark();
@@ -77,6 +76,7 @@ function showBookMarks(){
     }
     container.innerHTML = box;
     localStorage.setItem('books',JSON.stringify(rows));
+    hideDeleteAllButton();
 }
 
 // function to clear the inputs
