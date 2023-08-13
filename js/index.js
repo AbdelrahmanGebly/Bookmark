@@ -92,6 +92,7 @@ function deleteBookMark(index){
     rows.splice(index,1);
     localStorage.setItem('books',JSON.stringify(rows));
     showBookMarks();
+    hideDeleteAllButton();
 }
 
 // validation function for site name
